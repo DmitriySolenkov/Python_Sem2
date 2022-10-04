@@ -1,0 +1,7 @@
+sec = int(input('Enter seconds number:'))
+sec=abs(sec)
+days=int((sec/60/60/24)//1)
+hours=int(((sec-days*60*60*24)/60/60)//1)
+minutes=int(((sec-days*60*60*24-hours*60*60)/60)//1)
+seconds=int((sec-days*60*60*24-hours*60*60-minutes*60)//1)
+print(f'Days:{days}, hours:{hours}, minutes:{minutes}, seconds:{seconds}')
